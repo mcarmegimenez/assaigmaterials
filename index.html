@@ -1,8 +1,3247 @@
-<html>
+<!DOCTYPE html>
+<html lang="ES">
 <head>
-  <title>Assaig materials</title>
+
+<title>Assaig de materials</title>
+
+<meta name='description' content='plantas'/>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/logo_conf.css" media="screen" />
+
+<script src="js/plugins/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/plugins/jquery-ui.js" type="text/javascript"></script>
+<script src="js/plugins/jqueryuitouchpunch.js"></script>
+<script src="js/plugins/jquery.wresize.js"></script>
+<script src="js/plugins/jquery.spritely-0.6.js" type="text/javascript"></script>
+<script src="js/plugins/jquery.fittext.js" type="text/javascript"></script>
+<script src="js/plugins/jquery.backgroundpos.js"></script>
+<script src="js/plugins/jQueryRotate.js"></script>
+<script src="js/plugins/jQuerypath.js"></script>
+<script src="js/plugins/jquery.easing.min.js"></script>
+<script type="text/javascript" src="data/textos/textos.js"></script>
+<script src="js/plugins/jquery.serchprite.js"></script>
+<script src="data/textos/textos.js"></script>
+
+
+
+
+
 </head>
 <body>
-  <h1>Assaig materials</h1>
+
+
+<div id='fondo'>
+
+<div id='top'>
+
+               <div id='texto_top' class=''></div>	
+			   <div id='texto_top_titulo' class=''></div>
+
+              </div>
+
+<div id='bottom'></div>
+
+<div id='logo'></div> 
+
+                    <div id="robot" class='robot div'></div>
+					<div id="bocadillo_0" class='bocadillo div'></div>
+					
+					
+
+ <div id='fondo_fake'>                  
+
+                    
+					
+					<div id="robot" class='div'></div>
+					<div id="brazo_robot" class='div'></div>
+					
+					
+					<div id="empezar" class='div'></div>
+					
+					<div id="recuadro_uno" class='recuadro escena_1 div'></div>
+					<div id="recuadro_dos" class='recuadro escena_1 div'></div>
+					<div id="recuadro_tres" class='recuadro escena_1 div'></div>
+					<div id="recuadro_cuatro" class='recuadro escena_1 div'></div>
+					
+					<div id="linterna" class='div objetos_escenas escena_1'></div>
+					<div id="efecto_linterna_1" class='div objetos_escenas efecto_linterna'></div>
+					<div id="efecto_linterna_2" class='div objetos_escenas efecto_linterna'></div>
+					<div id="efecto_linterna_3" class='div objetos_escenas efecto_linterna'></div>
+					<div id="punzon" class='div objetos_escenas escena_1'></div>
+					<div id="circuito" class='div objetos_escenas escena_1'></div>
+					
+					<div id="cable_izq" class='div escena_1 cable'></div>
+					<div id="cable_der" class='div escena_1 cable'></div>
+					
+					<div id="martillo" class='div objetos_escenas escena_1'></div>
+					
+					<div id="fondo_vaso" class='fondo_objetos escena_1 div'></div>
+					<div id="fondo_tabla" class='fondo_objetos escena_1 div'></div>
+					<div id="fondo_plato" class='fondo_objetos escena_1 div'></div>
+					<div id="fondo_tupper" class='fondo_objetos escena_1 div'></div>
+					
+					<div id="vaso" class='objeto_draggable escena_1 div'></div>
+					<div id="tabla" class='objeto_draggable escena_1 div'></div>
+					<div id="plato" class='objeto_draggable escena_1 div'></div>
+					<div id="tupper" class='objeto_draggable escena_1 div'></div>
+					
+					<div id="bloqueo_tupper" class='bloqueo escena_1 div'></div>
+					<div id="bloqueo_plato" class='bloqueo escena_1 div'></div>
+					<div id="bloqueo_tabla" class='bloqueo escena_1 div'></div>
+					
+					<div id="trozo_1" class='trozo div'></div>
+					<div id="trozo_2" class='trozo div'></div>
+					<div id="trozo_3" class='trozo div'></div>
+					<div id="trozo_4" class='trozo div'></div>
+					<div id="trozo_5" class='trozo div'></div>
+					<div id="trozo_6" class='trozo div'></div>
+					<div id="trozo_7" class='trozo div'></div>
+					<div id="trozo_8" class='trozo div'></div>
+					<div id="trozo_9" class='trozo div'></div>
+					<div id="trozo_10" class='trozo div'></div>
+					<div id="trozo_11" class='trozo div'></div>
+					<div id="trozo_12" class='trozo div'></div>
+					
+					<div id="poner_linterna" class='poner escena_1 div'></div>
+					<div id="poner_punzon" class='poner escena_1 div'></div>
+					<div id="poner_circuito" class='poner escena_1 div'></div>
+					<div id="poner_martillo" class='poner escena_1 div'></div>
+					
+					<div id="sitio_linterna_vaso" class='div sitio_objeto'></div>
+					<div id="sitio_punzon_vaso" class='div sitio_objeto'></div>
+					<div id="sitio_circuito_vaso" class='div sitio_objeto'></div>
+					<div id="sitio_martillo_vaso" class='div sitio_objeto'></div>
+					
+					<div id="sitio_linterna_tupper" class='div sitio_objeto'></div>
+					<div id="sitio_punzon_tupper" class='div sitio_objeto'></div>
+					<div id="sitio_punzon_tupper_fake" class='div sitio_objeto'></div>
+					<div id="sitio_circuito_tupper" class='div sitio_objeto'></div>
+					<div id="sitio_martillo_tupper" class='div sitio_objeto'></div>
+					
+					<div id="sitio_linterna_plato" class='div sitio_objeto'></div>
+					<div id="sitio_punzon_plato" class='div sitio_objeto'></div>
+					<div id="sitio_punzon_plato_fake" class='div sitio_objeto'></div>
+					<div id="sitio_circuito_plato" class='div sitio_objeto'></div>
+					<div id="sitio_martillo_plato" class='div sitio_objeto'></div>
+					
+					<div id="sitio_linterna_tabla" class='div sitio_objeto escena_1'></div>
+					<div id="sitio_punzon_tabla" class='div sitio_objeto escena_1'></div>
+					<div id="sitio_punzon_tabla_fake" class='div sitio_objeto escena_1'></div>
+					<div id="sitio_circuito_tabla" class='div sitio_objeto escena_1'></div>
+					<div id="sitio_martillo_tabla" class='div sitio_objeto escena_1'></div>				
+					
+					<div id='opaco' class='cuadricula columna_1 fila_0 div escena_5'>opaco</div>
+					<div id='conductor' class='cuadricula columna_2 fila_0 div escena_5'>conductor</div>
+					<div id='duro' class='cuadricula columna_3 fila_0 div escena_5'>duro</div>
+					<div id='fragil' class='cuadricula columna_4 fila_0 div escena_5'>fragil</div>
+					
+					<div id='matraz_dibu' class='cuadricula columna_0 matraz objeto_tabla escena_5 dibu div'>matraz</div>
+					<div id='matraz_opaco' class='cuadricula columna_1 matraz escena_5 div'>
+					                                <div id='matraz_opaco_si' class='eleccion si'>si</div>
+													<div id='matraz_opaco_no' class='eleccion no'>no</div>
+													<div id='matraz_opaco_si_fake' class='si fake'></div>
+													<div id='matraz_opaco_no_fake' class='no fake'></div>
+					</div>
+					<div id='matraz_conductor' class='cuadricula columna_2 matraz escena_5 div'>
+					                                <div id='matraz_conductor_si' class='eleccion si'>si</div>
+													<div id='matraz_conductor_no' class='eleccion no'>no</div>
+													<div id='matraz_conductor_si_fake' class='si fake'></div>
+													<div id='matraz_conductor_no_fake' class='no fake'></div>
+					</div>
+					<div id='matraz_duro' class='cuadricula columna_3 matraz escena_5 div'>
+					                                <div id='matraz_duro_si' class='eleccion si'>si</div>
+													<div id='matraz_duro_no' class='eleccion no'>no</div>
+													<div id='matraz_duro_si_fake' class='si fake'></div>
+													<div id='matraz_duro_no_fake' class='no fake'></div>
+					</div>
+					<div id='matraz_fragil' class='cuadricula columna_4 matraz escena_5 div'>
+					                                <div id='matraz_fragil_si' class='eleccion si'>si</div>
+													<div id='matraz_fragil_no' class='eleccion no'>no</div>
+													<div id='matraz_fragil_si_fake' class='si fake'></div>
+													<div id='matraz_fragil_no_fake' class='no fake'></div>
+					</div>
+					
+					<div id='jarron_dibu' class='cuadricula columna_0 jarron objeto_tabla escena_5 dibu div'>jarron</div>
+					<div id='jarron_opaco' class='cuadricula columna_1 jarron escena_5 div'>
+					                                <div id='jarron_opaco_si' class='eleccion si'>si</div>
+													<div id='jarron_opaco_no' class='eleccion no'>no</div>
+													<div id='jarron_opaco_si_fake' class='si fake'></div>
+													<div id='jarron_opaco_no_fake' class='no fake'></div>
+					</div>
+					<div id='jarron_conductor' class='cuadricula columna_2 jarron escena_5 div'>
+					                                <div id='jarron_conductor_si' class='eleccion si'>si</div>
+													<div id='jarron_conductor_no' class='eleccion no'>no</div>
+													<div id='jarron_conductor_si_fake' class='si fake'></div>
+													<div id='jarron_conductor_no_fake' class='no fake'></div>
+					</div>
+					<div id='jarron_duro' class='cuadricula columna_3 jarron escena_5 div'>
+					                                <div id='jarron_duro_si' class='eleccion si'>si</div>
+													<div id='jarron_duro_no' class='eleccion no'>no</div>
+													<div id='jarron_duro_si_fake' class='si fake'></div>
+													<div id='jarron_duro_no_fake' class='no fake'></div>
+					</div>
+					<div id='jarron_fragil' class='cuadricula columna_4 jarron escena_5 div'>
+					                                <div id='jarron_fragil_si' class='eleccion si'>si</div>
+													<div id='jarron_fragil_no' class='eleccion no'>no</div>
+													<div id='jarron_fragil_si_fake' class='si fake'></div>
+													<div id='jarron_fragil_no_fake' class='no fake'></div>
+					</div>
+					
+					<div id='regla_dibu' class='cuadricula columna_0 regla objeto_tabla escena_5 dibu div'>regla</div>
+					<div id='regla_opaco' class='cuadricula columna_1 regla escena_5 div'>
+					                                <div id='regla_opaco_si' class='eleccion si'>si</div>
+													<div id='regla_opaco_no' class='eleccion no'>no</div>
+													<div id='regla_opaco_si_fake' class='si fake'></div>
+													<div id='regla_opaco_no_fake' class='no fake'></div>
+					</div>
+					<div id='regla_conductor' class='cuadricula columna_2 regla escena_5 div'>
+					                                <div id='regla_conductor_si' class='eleccion si'>si</div>
+													<div id='regla_conductor_no' class='eleccion no'>no</div>
+													<div id='regla_conductor_si_fake' class='si fake'></div>
+													<div id='regla_conductor_no_fake' class='no fake'></div>
+					</div>
+					<div id='regla_duro' class='cuadricula columna_3 regla escena_5 div'>
+					                                <div id='regla_duro_si' class='eleccion si'>si</div>
+													<div id='regla_duro_no' class='eleccion no'>no</div>
+													<div id='regla_duro_si_fake' class='si fake'></div>
+													<div id='regla_duro_no_fake' class='no fake'></div>
+					</div>
+					<div id='regla_fragil' class='cuadricula columna_4 regla escena_5 div'>
+					                                <div id='regla_fragil_si' class='eleccion si'>si</div>
+													<div id='regla_fragil_no' class='eleccion no'>no</div>
+													<div id='regla_fragil_si_fake' class='si fake'></div>
+													<div id='regla_fragil_no_fake' class='no fake'></div>
+					</div>
+					
+					<div id='euro_dibu' class='cuadricula columna_0 euro objeto_tabla escena_5 dibu div'>euro</div>
+					<div id='euro_opaco' class='cuadricula columna_1 euro escena_5 div'>
+					                                <div id='euro_opaco_si' class='eleccion si'>si</div>
+													<div id='euro_opaco_no' class='eleccion no'>no</div>
+													<div id='euro_opaco_si_fake' class='si fake'></div>
+													<div id='euro_opaco_no_fake' class='no fake'></div>
+					</div>
+					<div id='euro_conductor' class='cuadricula euro columna_2 escena_5 div'>
+					                                <div id='euro_conductor_si' class='eleccion si'>si</div>
+													<div id='euro_conductor_no' class='eleccion no'>no</div>
+													<div id='euro_conductor_si_fake' class='si fake'></div>
+													<div id='euro_conductor_no_fake' class='no fake'></div>
+					</div>
+					<div id='euro_duro' class='cuadricula columna_3 euro escena_5 div'>
+					                                <div id='euro_duro_si' class='eleccion si'>si</div>
+													<div id='euro_duro_no' class='eleccion no'>no</div>
+													<div id='euro_duro_si_fake' class='si fake'></div>
+													<div id='euro_duro_no_fake' class='no fake'></div>
+					</div>
+					<div id='euro_fragil' class='cuadricula columna_4 euro escena_5 div'>
+					                                <div id='euro_fragil_si' class='eleccion si'>si</div>
+													<div id='euro_fragil_no' class='eleccion no'>no</div>
+													<div id='euro_fragil_si_fake' class='si fake'></div>
+													<div id='euro_fragil_no_fake' class='no fake'></div>
+					</div>
+					
+					<div id='tiza_dibu' class='cuadricula columna_0 tiza objeto_tabla escena_5 dibu div'>tiza</div>
+					<div id='tiza_opaco' class='cuadricula columna_1 tiza escena_5 div'>
+					                                <div id='tiza_opaco_si' class='eleccion si'>si</div>
+													<div id='tiza_opaco_no' class='eleccion no'>no</div>
+													<div id='tiza_opaco_si_fake' class='si fake'></div>
+													<div id='tiza_opaco_no_fake' class='no fake'></div>
+					</div>
+					<div id='tiza_conductor' class='cuadricula columna_2 tiza escena_5 div'>
+					                                <div id='tiza_conductor_si' class='eleccion si'>si</div>
+													<div id='tiza_conductor_no' class='eleccion no'>no</div>
+													<div id='tiza_conductor_si_fake' class='si fake'></div>
+													<div id='tiza_conductor_no_fake' class='no fake'></div>
+					</div>
+					<div id='tiza_duro' class='cuadricula columna_3 tiza escena_5 div'>
+					                                <div id='tiza_duro_si' class='eleccion si'>si</div>
+													<div id='tiza_duro_no' class='eleccion no'>no</div>
+													<div id='tiza_duro_si_fake' class='si fake'></div>
+													<div id='tiza_duro_no_fake' class='no fake'></div>
+					</div>
+					<div id='tiza_fragil' class='cuadricula columna_4 tiza escena_5 div'>
+					                                <div id='tiza_fragil_si' class='eleccion si'>si</div>
+													<div id='tiza_fragil_no' class='eleccion no'>no</div>
+													<div id='tiza_fragil_si_fake' class='si fake'></div>
+													<div id='tiza_fragil_no_fake' class='no fake'></div>
+					</div>
+					
+					<div id='hierro_dibu' class='cuadricula columna_0 hierro objeto_tabla escena_5 dibu div'>hierro</div>
+					<div id='hierro_opaco' class='cuadricula columna_1 hierro escena_5 div'>
+					                                <div id='hierro_opaco_si' class='eleccion si'>si</div>
+													<div id='hierro_opaco_no' class='eleccion no'>no</div>
+													<div id='hierro_opaco_si_fake' class='si fake'></div>
+													<div id='hierro_opaco_no_fake' class='no fake'></div>
+													
+					</div>
+					<div id='hierro_conductor' class='cuadricula columna_2 hierro escena_5 div'>
+					                                <div id='hierro_conductor_si' class='eleccion si'>si</div>
+													<div id='hierro_conductor_no' class='eleccion no'>no</div>
+													<div id='hierro_conductor_si_fake' class='si fake'></div>
+													<div id='hierro_conductor_no_fake' class='no fake'></div>
+					</div>
+					<div id='hierro_duro' class='cuadricula columna_3 hierro escena_5 div'>
+					                                <div id='hierro_duro_si' class='eleccion si'>si</div>
+													<div id='hierro_duro_no' class='eleccion no'>no</div>
+													<div id='hierro_duro_si_fake' class='si fake'></div>
+													<div id='hierro_duro_no_fake' class='no fake'></div>
+					</div>
+					<div id='hierro_fragil' class='cuadricula columna_4 hierro escena_5 div'>
+					                                <div id='hierro_fragil_si' class='eleccion si'>si</div>
+													<div id='hierro_fragil_no' class='eleccion no'>no</div>
+													<div id='hierro_fragil_si_fake' class='si fake'></div>
+													<div id='hierro_fragil_no_fake' class='no fake'></div>
+					</div>
+					
+					<div id='metal_dibu' class='cuadricula columna_0 metal objeto_tabla escena_5 dibu div'>metal</div>
+					<div id='metal_opaco' class='cuadricula columna_1 metal escena_5 div'>
+					                                <div id='metal_opaco_si' class='eleccion si'>si</div>
+													<div id='metal_opaco_no' class='eleccion no'>no</div>
+													<div id='metal_opaco_si_fake' class='si fake'></div>
+													<div id='metal_opaco_no_fake' class='no fake'></div>
+					</div>
+					<div id='metal_conductor' class='cuadricula columna_2 metal escena_5 div'>
+					                                <div id='metal_conductor_si' class='eleccion si'>si</div>
+													<div id='metal_conductor_no' class='eleccion no'>no</div>
+													<div id='metal_conductor_si_fake' class='si fake'></div>
+													<div id='metal_conductor_no_fake' class='no fake'></div>
+					</div>
+					<div id='metal_duro' class='cuadricula columna_3 metal escena_5 div'>
+					                                <div id='metal_duro_si' class='eleccion si'>si</div>
+													<div id='metal_duro_no' class='eleccion no'>no</div>
+													<div id='metal_duro_si_fake' class='si fake'></div>
+													<div id='metal_duro_no_fake' class='no fake'></div>
+					</div>
+					<div id='metal_fragil' class='cuadricula columna_4 metal escena_5 div'>
+					                                <div id='metal_fragil_si' class='eleccion si'>si</div>
+													<div id='metal_fragil_no' class='eleccion no'>no</div>
+													<div id='metal_fragil_si_fake' class='si fake'></div>
+													<div id='metal_fragil_no_fake' class='no fake'></div>
+					</div>
+					
+					<div id='plastico_dibu' class='cuadricula columna_0 plastico objeto_tabla escena_5 dibu div'>plastico</div>
+					<div id='plastico_opaco' class='cuadricula columna_1 plastico escena_5 div'>
+					                                <div id='plastico_opaco_si' class='eleccion si'>si</div>
+													<div id='plastico_opaco_no' class='eleccion no'>no</div>
+													<div id='plastico_opaco_si_fake' class='si fake'></div>
+													<div id='plastico_opaco_no_fake' class='no fake'></div>
+					</div>
+					<div id='plastico_conductor' class='cuadricula columna_2 plastico escena_5 div'>
+					                                <div id='plastico_conductor_si' class='eleccion si'>si</div>
+													<div id='plastico_conductor_no' class='eleccion no'>no</div>
+													<div id='plastico_conductor_si_fake' class='si fake'></div>
+													<div id='plastico_conductor_no_fake' class='no fake'></div>
+					</div>
+					<div id='plastico_duro' class='cuadricula columna_3 plastico escena_5 div'>
+					                                <div id='plastico_duro_si' class='eleccion si'>si</div>
+													<div id='plastico_duro_no' class='eleccion no'>no</div>
+													<div id='plastico_duro_si_fake' class='si fake'></div>
+													<div id='plastico_duro_no_fake' class='no fake'></div>
+					</div>
+					<div id='plastico_fragil' class='cuadricula columna_4 plastico escena_5 div'>
+					                                <div id='plastico_fragil_si' class='eleccion si'>si</div>
+													<div id='plastico_fragil_no' class='eleccion no'>no</div>
+													<div id='plastico_fragil_si_fake' class='si fake'></div>
+													<div id='plastico_fragil_no_fake' class='no fake'></div>
+					</div>
+					
+					<div id='texto_linterna' class='texto_objeto escena_1 div'></div>
+					<div id='texto_punzon' class='texto_objeto escena_1 div'></div>
+					<div id='texto_circuito' class='texto_objeto escena_1 div'></div>
+					<div id='texto_martillo' class='texto_objeto escena_1 div'></div>
+					
+					<div id='texto_utilizar_ahora' class='escena_1 div'></div>
+					
+					<div id='robot_final' class='robot escena_5 div'></div>
+					<div id='bocadillo_final' class='bocadillo escena_5 div'></div>
+					
+					<div id='corregir' class='div escena_5 botones_esc_5'></div>
+					
+					<div id='tabla_again' class='div escena_5 botones_esc_5'></div>
+					
+					<div id='inicio_again' class='div escena_5 botones_esc_5'></div>
+					
+
+					<div id='texto_top_titulo' class=''></div>
+					
+					<audio id='bien'>
+                              <source src="data/audio/bien.ogg" type="audio/ogg">
+                              <source src="data/audio/bien.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='mal'>
+                              <source src="data/audio/mal.ogg" type="audio/ogg">
+                              <source src="data/audio/mal.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='circuito_sonido'>
+                              <source src="data/audio/circuito.ogg" type="audio/ogg">
+                              <source src="data/audio/circuito.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='tabla_sonido'>
+                              <source src="data/audio/tabla.ogg" type="audio/ogg">
+                              <source src="data/audio/tabla.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='tupper_sonido'>
+                              <source src="data/audio/tupper.ogg" type="audio/ogg">
+                              <source src="data/audio/tupper.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='plato_sonido'>
+                              <source src="data/audio/plato.ogg" type="audio/ogg">
+                              <source src="data/audio/plato.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='vaso_roto'>
+                              <source src="data/audio/vaso_roto.ogg" type="audio/ogg">
+                              <source src="data/audio/vaso_roto.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='martillo_plastico'>
+                              <source src="data/audio/martillo_plastico_3.ogg" type="audio/ogg">
+                              <source src="data/audio/martillo_plastico_3.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='martillo_madera'>
+                              <source src="data/audio/martillo_madera.ogg" type="audio/ogg">
+                              <source src="data/audio/martillo_madera.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='martillo_metal'>
+                              <source src="data/audio/martillo_metal.ogg" type="audio/ogg">
+                              <source src="data/audio/martillo_metal.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					<audio id='vaso_punzon_sonido'>
+                              <source src="data/audio/vaso.ogg" type="audio/ogg">
+                              <source src="data/audio/vaso.mp3" type="audio/mpeg">               
+                    </audio>
+					
+					
+				    
+					
+	
+
+     	            
+
+                	   <div id='preloader' class='preloader_stuff'>
+              
+                           <div id='preloaderPercent' class='preloader_stuff'></div>
+
+                           <div id='preloaderBar_cont' class='preloader_stuff'>
+
+                                            
+
+
+                                             <div id='preloaderBar' class='preloader_stuff'></div>
+
+
+                            </div>
+
+                   </div>			
+				
+</div>					
+					
+
+
+
+
+
+</div>
+
+<script type='text/javascript'>
+
+$( document ).ready(function() {
+
+
+
+var UrlDir = 'data/imgns/';
+var arrayImagenes = ["bocadillo.png", "jarron.png", "circuito.png", "circuito_on.png", "contrachapado.png", "euro.png", "linterna.png", "martillo.png", "matraz.png", "metal.png", "plastico.png", "plato.png", "plato_rayado.png", "poner.png", "punzon.png", "regla.png", "robot.png", "tabla.png", "tabla_rayado.png", "tiza.png", "trozo_1.png", "trozo_2.png", "trozo_3.png", "trozo_4.png", "trozo_5.png", "trozo_6.png", "trozo_7.png", "trozo_8.png", "trozo_9.png", "trozo_10.png", "trozo_11.png", "trozo_12.png", "trozo_13.png", "tupper.png", "tupper_blanco.png", "tupper_rayado.png", "vaso.png", "vaso_blanco.png"];
+var loadedImgs = 0;
+
+function preload(funct) {
+
+
+  for (i = 0; i < arrayImagenes.length; i++) {
+    var img = new Image();
+  img.onload = function() {
+    loadedImgs++;
+	
+
+    $('#preloaderBar').css({'width':(loadedImgs/arrayImagenes.length)*100.0+'%'}); 
+    $('#preloaderPercent').html(parseInt((loadedImgs/arrayImagenes.length)*100.0)+'%'); 
+    if(loadedImgs == arrayImagenes.length) {
+	
+
+     $('#preloader').hide()
+	 girar_brazo_robot();
+    
+    }
+  };
+    img.src = UrlDir+arrayImagenes[i];
+  }
+}
+
+preload()
+
+//ocultamos la precarga
+//$('#preloader').hide()
+
+
+
+$(document).on('touchmove', function(e) {
+    if (!$(e.target).parents('.scroll')[0]) {
+        e.preventDefault();
+    }
+});
+
+
+
+var logo_ancho = ($('#logo').width()/960) * 100;
+var logo_alto = ($('#logo').height()/600) * 100;
+var logo_left = ($('#logo').position().left/960) * 100;
+var logo_top = ($('#logo').position().top/600) * 100;
+
+$('#logo').css({ width: +logo_ancho+'%', height: +logo_alto+'%', left: +logo_left+'%', top: +logo_top+'%'});
+
+
+
+//para el resize
+
+setInterval(function(){
+
+if( $(window).height() > 600 ) { $('#fondo').css({ height: '100%', width: $(window).height()*1.6 + 'px'  }) };
+if( $(window).height() < 600 ) {
+                               $('#fondo').css({ height: '100%', width: $(window).height()*1.6 + 'px'  })
+                                         }
+         if( $(window).width() < 960 ) {
+                               $('#fondo').css({ height: $(window).width()/1.6 + 'px', width: '100%' })
+                                         }
+        if( $(window).height() < 600  &&  $(window).width() < 960 ) {
+                        if( $(window).width()   >   $(window).height()*1.6 ){
+                               $('#fondo').css({ height: '100%', width: $(window).height()*1.6 + 'px'  })
+                       }else{
+                               $('#fondo').css({ height: $(window).width()/1.6 + 'px', width: '100%' })
+                       } 
+		 }
+		 
+		$('.canvas').css({ height: $('#fondo').height() + 'px', width: $('#fondo').width() + 'px' }); 
+
+ //dejando bien los textos
+ 
+ var ancho_fondo = (600) / ($('#fondo').height());
+ 
+ $('#bocadillo_0').css({ 'font-size' : 18/ancho_fondo + 'px', 'line-height' : 18/ancho_fondo + 'px'}).addClass('estilos_normales');
+ $('.texto_objeto').css({ 'font-size' : 18/ancho_fondo + 'px', 'line-height' : 18/ancho_fondo + 'px'}).addClass('estilos_normales');
+ $('#texto_top_titulo').css({ 'font-size' : 20/ancho_fondo + 'px'}).addClass('estilos_cabecera');
+ $('#bocadillo_final').css({ 'font-size' : 18/ancho_fondo + 'px', 'line-height' : 18/ancho_fondo + 'px'}).addClass('estilos_normales');
+ $('.botones_esc_5').css({ 'font-size' : 18/ancho_fondo + 'px', 'line-height' : 18/ancho_fondo + 'px'}).addClass('estilos_normales');
+ $('.eleccion').css({ 'font-size' : 18/ancho_fondo + 'px', 'line-height' : 18/ancho_fondo + 'px'}).addClass('estilos_normales');
+ $('.dibu').css({ 'font-size' : 18/ancho_fondo + 'px'}).addClass('estilos_normales');
+ $('.fila_0').css({ 'font-size' : 18/ancho_fondo + 'px', 'line-height' : 18/ancho_fondo + 'px'}).addClass('estilos_normales');
+ $('#empezar').css({ 'font-size' : 19/ancho_fondo + 'px'}).addClass('estilos_normales');
+ $('#texto_utilizar_ahora').css({ 'font-size' : 18/ancho_fondo + 'px'}).addClass('estilos_normales');
+ $('.fondo_objetos').css({ 'font-size' : 18/ancho_fondo + 'px'}).addClass('estilos_normales');
+  
+ var logo_ancho = ($('#logo').width()/$('#fondo').width()) * 100;
+ var logo_alto = ($('#logo').height()/$('#fondo').height()) * 100;
+
+$('#logo').css({ width: +logo_ancho+'%', height: +logo_alto+'%'});
+ 
+}, 10); // fin del resize
+
+//fuera para el principio
+
+if( $(window).height() > 600 ) { $('#fondo').css({ height: '100%', width: $(window).height()*1.6 + 'px'  }) };
+if( $(window).height() < 600 ) {
+                               $('#fondo').css({ height: '100%', width: $(window).height()*1.6 + 'px'  })
+                                         }
+         if( $(window).width() < 960 ) {
+                               $('#fondo').css({ height: $(window).width()/1.6 + 'px', width: '100%' })
+                                         }
+        if( $(window).height() < 600  &&  $(window).width() < 960 ) {
+                        if( $(window).width()   >   $(window).height()*1.6 ){
+                               $('#fondo').css({ height: '100%', width: $(window).height()*1.6 + 'px'  })
+                       }else{
+                               $('#fondo').css({ height: $(window).width()/1.6 + 'px', width: '100%' })
+                       } 
+        }
+		
+ $('.canvas').css({ height: $('#fondo').height() + 'px', width: $('#fondo').width() + 'px' });
+		
+ //dejando bien los textos
+ 
+ var ancho_fondo = (600) / ($('#fondo').height())
+ 
+  ua = navigator.userAgent.toLowerCase(); 
+  
+ 
+
+ 
+ //textos principio
+ 
+
+ 
+
+ 
+ bien = document.getElementById("bien");
+ mal = document.getElementById("mal");
+ circuito_sonido = document.getElementById("circuito_sonido");
+ tabla_sonido = document.getElementById("tabla_sonido");
+ plato_sonido = document.getElementById("plato_sonido");
+ tupper_sonido = document.getElementById("tupper_sonido");
+ vaso_roto = document.getElementById("vaso_roto");
+ martillo_madera = document.getElementById("martillo_madera");
+ martillo_metal = document.getElementById("martillo_metal");
+ martillo_plastico = document.getElementById("martillo_plastico");
+ vaso_punzon_sonido = document.getElementById("vaso_punzon_sonido");
+ 
+ 
+ //dejando bien el logo
+
+
+ 
+ 
+function escena(num_escena){
+
+
+//ponemos las variables a 0
+
+    
+     
+//desaparecen todos los div
+
+$('.div').css('display', 'none');
+
+//se inicia la escena que sea:
+
+
+if(num_escena === 0){  escena_0() };
+if(num_escena === 1){  escena_1() };
+if(num_escena === 5){  escena_5() };
+
+
+
+};
+
+
+
+$('#inicio').on('click', function(){   escena(0)       });
+$('#empezar').on('click', function(){   escena(1)       });
+
+//// iniciar variables
+estamos_escena_1 = 0;
+estamos_escena_0 = 0;
+
+//para empezar por la primera escena:
+
+escena(0);
+
+//dejando el punzón girado
+
+$("#punzon").rotate({                         
+                     angle: 30,                              
+					 center: ["0%", "50%"]						
+                    });
+
+function girar_brazo_robot(){
+                    
+					$('#brazo_robot').rotate({
+                                             duration: 1000,
+                                             angle: 0,					  
+                                             animateTo: -30,  //-22, 12 y 32
+					                         center: ["30%", "80%"],
+			                                 easing: $.easing.easeInQuad
+                     });
+					 
+					 setTimeout(function(){
+					 
+					 $('#brazo_robot').rotate({
+                                             duration: 500,
+                                            					  
+                                             animateTo: 40,  //-22, 12 y 32
+					                         center: ["30%", "80%"],
+			                                 easing: $.easing.easeInQuad
+                     });
+					 
+					 }, 1000);
+					 
+					 setTimeout(function(){
+					 
+					 $('#brazo_robot').rotate({
+                                             duration: 1000,
+                                             					  
+                                             animateTo: -30,  //-22, 12 y 32
+					                         center: ["30%", "80%"],
+			                                 easing: $.easing.easeInQuad
+                     });
+					 
+					 }, 1500);
+					 
+					 setTimeout(function(){
+					 
+					 $('#brazo_robot').rotate({
+                                             duration: 400,
+                                            					  
+                                             animateTo: 40,  //-22, 12 y 32
+					                         center: ["30%", "80%"],
+			                                 easing: $.easing.easeInQuad
+                     });
+					 
+					 }, 2500);
+					 
+					 setTimeout(function(){
+					 
+					 $('#empezar').rotate({
+                      duration: 1000,
+                      angle: 0,					  
+                      animateTo: 720,  //-22, 12 y 32
+					  center: ["50%", "50%"],
+			          easing: $.easing.easeInQuad
+                     });
+					 					 
+					 }, 4000);
+					 
+					 
+					 
+
+                 
+};
+					
+veces_vaso = 0;
+veces_tupper = 0;
+veces_plato = 0;
+veces_tabla = 0;
+
+
+
+function escena_0(){
+
+
+estamos_escena_0 = 1;
+
+
+$('#texto_top_titulo').html(textos.inicio);
+
+
+
+$('#bocadillo_0').fadeIn(500).html(textos.bocadillo_0);
+$('#bocadillo_0 p').css('margin-top', '8%');
+$('#empezar').addClass('estilos_cabecera').fadeIn(500).html(textos.empezar);
+
+$('.efecto_linterna').css('opacity', '0.0');
+$('.poner').css('display', 'none');
+$('.escena_5').css('display', 'none');
+
+$('#tabla_again, #inicio_again').css('cursor', 'default');
+
+$('#bocadillo_final').css('background-image', 'none');
+
+$('#robot').css('background-image', 'url(data/imgns/robot.png)');
+$('#robot').fadeIn(0);
+$('#brazo_robot').fadeIn(0);
+$('#bocadillo_0').css({ top: '19%', left: '8%'});
+$('#bocadillo_0').fadeIn(0);
+
+$('#fondo').removeClass('fondo_color').addClass('fondo_sin_color');
+
+$('#empezar').fadeIn(0);
+
+					 
+girar_brazo_robot();
+
+
+};// fin escena 0
+
+
+
+
+function escena_1(){
+
+$('#bocadillo_0').html(textos.robot_escena_1);
+$('#bocadillo_0 p').css('margin-top', '14%');
+
+$('.recuadro').fadeIn(0);
+$('.objetos_escenas').fadeIn(0);
+$('.fondo_objetos').fadeIn(0);
+$('.objeto_draggable').fadeIn(0);
+$('.poner').fadeIn(0);
+$('.cable').fadeIn(0);
+
+$('#vaso').css('opacity', '1.0');
+$('.efecto_linterna').css('opacity', '1.0');
+
+$('#fondo_vaso').html(textos.vidrio);
+$('#fondo_tupper').html(textos.plastico);
+$('#fondo_plato').html(textos.metal);
+$('#fondo_tabla').html(textos.madera);
+
+
+
+//para cada vez que empecemos
+veces_vaso = 0;
+veces_tupper = 0;
+veces_plato = 0;
+veces_tabla = 0;
+
+$('#robot').css('background-image', 'url(data/imgns/robot_2.png)');
+$('#bocadillo_0').css({ top: '21%', left: '13%'});
+
+
+
+
+$('.trozo').css({left: '57%', top: '80%' });
+
+
+//////
+
+utilizar_vaso();
+
+////////// llamamos a las funciones de la linterna
+
+estamos_escena_1 = 1;
+
+efecto_linterna_1();
+
+setTimeout(function(){
+                     efecto_linterna_2();
+}, 1500);
+
+setTimeout(function(){
+                     efecto_linterna_3();
+}, 3000);
+
+};
+
+function escena_5(){
+
+estamos_escena_0 = 0;
+
+$('#texto_top_titulo').html(textos.rotulo_final);
+$('#bocadillo_final').html(textos.robot_pulsa);
+$('#corregir').html(textos.corregir);
+$('#tabla_again').html(textos.tabla_again);
+$('#inicio_again').html(textos.inicio_again);
+$('.si').html(textos.si);
+$('.no').html(textos.no);
+$('#matraz_dibu').html(textos.matraz);
+$('#jarron_dibu').html(textos.caja_madera);
+$('#regla_dibu').html(textos.regla);
+$('#hierro_dibu').html(textos.contrachapado);
+$('#tiza_dibu').html(textos.tiza);
+$('#euro_dibu').html(textos.euro);
+$('#metal_dibu').html(textos.llave);
+$('#plastico_dibu').html(textos.boli);
+$('#opaco').html(textos.opaco);
+$('#conductor').html(textos.conductor);
+$('#duro').html(textos.duro);
+$('#fragil').html(textos.fragil);
+$('.fake').html('');
+
+$('#tabla_again, #inicio_again').css('cursor', 'default');
+
+$('#corregir').css({ display: 'block', opacity: '0.2', cursor: 'default'});
+$('#tabla_again').css({ display: 'block', opacity: '0.2'});
+$('#inicio_again').css({ display: 'block', opacity: '0.2'});
+$('.efecto_linterna').css('opacity', '0.0');
+$('.escena_1').fadeOut(0);
+$('.fake').fadeOut(0);
+
+$('#bocadillo_final').css('background-image', 'url(data/imgns/bocadillo_final.png)');
+
+$('#robot_final, #bocadillo_final').delay(2000).fadeIn(500);
+
+//aciertos
+
+aciertos = 0;
+
+// control escena para funciones linterna
+
+estamos_escena_1 = 0;
+
+
+//iniciamos las variables de la tabla
+matraz_opacidad = null;
+matraz_conduccion = null;
+matraz_dureza = null;
+matraz_fragilidad = null;
+
+jarron_opacidad = null;
+jarron_conduccion = null;
+jarron_dureza = null;
+jarron_fragilidad = null;
+
+regla_opacidad = null;
+regla_conduccion = null;
+regla_dureza = null;
+regla_fragilidad = null;
+
+euro_opacidad = null;
+euro_conduccion = null;
+euro_dureza = null;
+euro_fragilidad = null;
+					
+tiza_opacidad = null;
+tiza_conduccion = null;
+tiza_dureza = null;
+tiza_fragilidad = null;
+					
+hierro_opacidad = null;
+hierro_conduccion = null;
+hierro_dureza = null;
+hierro_fragilidad = null;
+						
+metal_opacidad = null;
+metal_conduccion = null;
+metal_dureza = null;
+metal_fragilidad = null;
+
+plastico_opacidad = null;
+plastico_conduccion = null;
+plastico_dureza = null;
+plastico_fragilidad = null;
+
+/////
+
+corregir = 0;
+
+
+//////
+
+
+//////////// vamos con la escena final///////////
+
+$('.cuadricula').children()
+                .removeClass('pulsado')
+				.removeClass('fallo_eleccion')				
+				.off('click');
+				
+$('.cuadricula').removeClass('fila_1')
+				.removeClass('fila_2')
+				.removeClass('fila_3')
+				.removeClass('fila_4')
+
+$('#corregir, #tabla_again, #inicio_again').off('click');
+
+$('.cuadricula').fadeOut(0);
+$('.fila_0').fadeIn(0);
+
+//definimos el arrayImagenes
+
+fila_1 = ["matraz", "jarron", "euro", "tiza", "regla", "hierro", "metal", "plastico" ];
+
+//elegir num aleatorio
+
+num_eleccion_1 = Math.floor(Math.random() * (7-0+1)) + 0;
+
+primera_fila = fila_1[num_eleccion_1];
+
+$('.'+primera_fila+'').addClass('fila_1').delay(400).fadeIn(500);
+
+//borramos el num que ha salido del array
+
+fila_1.splice(num_eleccion_1, 1);
+
+fila_2 = fila_1;
+
+//otro num aleatorio
+
+num_eleccion_2 = Math.floor(Math.random() * (6-0+1)) + 0;
+
+segunda_fila = fila_2[num_eleccion_2];
+
+$('.'+segunda_fila+'').addClass('fila_2').delay(800).fadeIn(500);
+
+
+//borramos el num que ha salido del array
+
+fila_2.splice(num_eleccion_2, 1);
+
+fila_3 = fila_2;
+
+//elegir num aleatorio
+
+num_eleccion_3 = Math.floor(Math.random() * (5-0+1)) + 0;
+
+tercera_fila = fila_3[num_eleccion_3];
+
+$('.'+tercera_fila+'').addClass('fila_3').delay(1200).fadeIn(500);
+
+
+//borramos el num que ha salido del array
+
+fila_3.splice(num_eleccion_3, 1);
+
+fila_4 = fila_3;
+
+//otro num aleatorio
+
+num_eleccion_4 = Math.floor(Math.random() * (4-0+1)) + 0;
+
+cuarta_fila = fila_4[num_eleccion_4];
+
+$('.'+cuarta_fila+'').addClass('fila_4').delay(1600).fadeIn(500);
+
+
+//y ahora nos liamos con las variables
+
+
+
+$( "#matraz_opaco_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $('#matraz_opaco_no').addClass('no_pulsado').removeClass('pulsado');
+							  $("#matraz_opaco_si_fake").fadeIn(0);
+							  $("#matraz_opaco_no_fake").fadeOut(0);
+							  if(matraz_opacidad == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              matraz_opacidad = 1;							  
+                              corregir++
+							   
+                              if( corregir === 16 )corregir_aparece();							  
+                             							  
+});
+
+$( "#matraz_opaco_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#matraz_opaco_no_fake").fadeIn(0);
+							  $("#matraz_opaco_si_fake").fadeOut(0);
+							  $('#matraz_opaco_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( matraz_opacidad == 1){
+							                        corregir--
+											          };							  
+							  matraz_opacidad = 0;
+							  corregir++
+							  aciertos++
+                              							  
+                              if( corregir === 16 )corregir_aparece();							  
+							  
+});
+
+$( "#matraz_conductor_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#matraz_conductor_si_fake").fadeIn(0);
+							  $("#matraz_conductor_no_fake").fadeOut(0);
+							  $('#matraz_conductor_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(matraz_conduccion == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              matraz_conduccion = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#matraz_conductor_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#matraz_conductor_si_fake").fadeOut(0);
+							  $("#matraz_conductor_no_fake").fadeIn(0);
+							  $('#matraz_conductor_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( matraz_conduccion == 1){
+							                        corregir--
+											          };
+							  matraz_conduccion = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#matraz_duro_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#matraz_duro_si_fake").fadeIn(0);
+							  $("#matraz_duro_no_fake").fadeOut(0);
+							  $('#matraz_duro_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( matraz_dureza == 0){
+							                        corregir--
+											          };
+                              matraz_dureza = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();						  
+});
+
+$( "#matraz_duro_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#matraz_duro_si_fake").fadeOut(0);
+							  $("#matraz_duro_no_fake").fadeIn(0);
+							  $('#matraz_duro_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(matraz_dureza == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  matraz_dureza = 0;
+							  corregir++
+							  if( corregir === 16 )corregir_aparece();						  
+});
+
+$( "#matraz_fragil_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#matraz_fragil_si_fake").fadeIn(0);
+							  $("#matraz_fragil_no_fake").fadeOut(0);
+							  $('#matraz_fragil_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( matraz_fragilidad == 0){
+							                        corregir--
+											          };
+                              matraz_fragilidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#matraz_fragil_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#matraz_fragil_si_fake").fadeOut(0);
+							  $("#matraz_fragil_no_fake").fadeIn(0);
+							  $('#matraz_fragil_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(matraz_fragilidad == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  matraz_fragilidad = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+////////////
+
+$( "#jarron_opaco_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#jarron_opaco_si_fake").fadeIn(0);
+							  $("#jarron_opaco_no_fake").fadeOut(0);
+							  $('#jarron_opaco_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( jarron_opacidad == 0){
+							                        corregir--
+											          };
+                              jarron_opacidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#jarron_opaco_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#jarron_opaco_si_fake").fadeOut(0);
+							  $("#jarron_opaco_no_fake").fadeIn(0);
+							  $('#jarron_opaco_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(jarron_opacidad == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  jarron_opacidad = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#jarron_conductor_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#jarron_conductor_si_fake").fadeIn(0);
+							  $("#jarron_conductor_no_fake").fadeOut(0);
+							  $('#jarron_conductor_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( jarron_conduccion == 0){
+							                        corregir--
+											          };
+                              jarron_conduccion = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#jarron_conductor_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#jarron_conductor_si_fake").fadeOut(0);
+							  $("#jarron_conductor_no_fake").fadeIn(0);
+							  $('#jarron_conductor_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( jarron_conduccion == 1){
+							                        corregir--
+											          };
+							  jarron_conduccion = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#jarron_duro_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#jarron_duro_si_fake").fadeIn(0);
+							  $("#jarron_duro_no_fake").fadeOut(0);
+							  $('#jarron_duro_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(jarron_dureza == 0){      							                    
+													corregir--
+													  };
+                              jarron_dureza = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#jarron_duro_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#jarron_duro_si_fake").fadeOut(0);
+							  $("#jarron_duro_no_fake").fadeIn(0);
+							  $('#jarron_duro_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( jarron_dureza == 1){
+							                        aciertos--
+							                        corregir--
+											          };
+							  jarron_dureza = 0;
+							  corregir++							  
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#jarron_fragil_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#jarron_fragil_si_fake").fadeIn(0);
+							  $("#jarron_fragil_no_fake").fadeOut(0);
+							  $('#jarron_fragil_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( jarron_fragilidad == 0){
+							                        corregir--
+											          };
+                              jarron_fragilidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#jarron_fragil_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#jarron_fragil_si_fake").fadeOut(0);
+							  $("#jarron_fragil_no_fake").fadeIn(0);
+							  $('#jarron_fragil_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(jarron_fragilidad == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  jarron_fragilidad = 0;
+							  corregir++
+							  if( corregir === 16 )corregir_aparece();	
+                              							  
+});
+
+//////////////////////
+
+$( "#regla_opaco_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#regla_opaco_si_fake").fadeIn(0);
+							  $("#regla_opaco_no_fake").fadeOut(0);
+							  $('#regla_opaco_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(regla_opacidad == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              regla_opacidad = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#regla_opaco_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#regla_opaco_si_fake").fadeOut(0);
+							  $("#regla_opaco_no_fake").fadeIn(0);
+							  $('#regla_opaco_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( regla_opacidad == 1){
+							                        corregir--
+											          };
+							  regla_opacidad = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#regla_conductor_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#regla_conductor_si_fake").fadeIn(0);
+							  $("#regla_conductor_no_fake").fadeOut(0);
+							  $('#regla_conductor_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(regla_conduccion == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              regla_conduccion = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#regla_conductor_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#regla_conductor_si_fake").fadeOut(0);
+							  $("#regla_conductor_no_fake").fadeIn(0);
+							  $('#regla_conductor_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( regla_conduccion == 1){
+							                        corregir--
+											          };
+							  regla_conduccion = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#regla_duro_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#regla_duro_si_fake").fadeIn(0);
+							  $("#regla_duro_no_fake").fadeOut(0);
+							  $('#regla_duro_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(regla_dureza == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              regla_dureza = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#regla_duro_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#regla_duro_si_fake").fadeOut(0);
+							  $("#regla_duro_no_fake").fadeIn(0);
+							  $('#regla_duro_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( regla_dureza == 1){
+							                        corregir--
+											          };
+							  regla_dureza = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#regla_fragil_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#regla_fragil_si_fake").fadeIn(0);
+							  $("#regla_fragil_no_fake").fadeOut(0);
+							  $('#regla_fragil_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( regla_fragilidad == 0){
+							                        corregir--
+											          };
+                              regla_fragilidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#regla_fragil_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#regla_fragil_si_fake").fadeOut(0);
+							  $("#regla_fragil_no_fake").fadeIn(0);
+							  $('#regla_fragil_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(regla_fragilidad == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  regla_fragilidad = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+/////////////				
+					
+$( "#euro_opaco_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#euro_opaco_si_fake").fadeIn(0);
+							  $("#euro_opaco_no_fake").fadeOut(0);
+							  $('#euro_opaco_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( euro_opacidad == 0){
+							                        corregir--
+											          };
+                              euro_opacidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#euro_opaco_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#euro_opaco_si_fake").fadeOut(0);
+							  $("#euro_opaco_no_fake").fadeIn(0);
+							  $('#euro_opaco_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(euro_opacidad == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  euro_opacidad = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#euro_conductor_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#euro_conductor_si_fake").fadeIn(0);
+							  $("#euro_conductor_no_fake").fadeOut(0);
+							  $('#euro_conductor_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( euro_conduccion == 0){
+							                        corregir--
+											          };
+                              euro_conduccion = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#euro_conductor_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#euro_conductor_si_fake").fadeOut(0);
+							  $("#euro_conductor_no_fake").fadeIn(0);
+							  $('#euro_conductor_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(euro_conduccion == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  euro_conduccion = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();			  
+});
+
+$( "#euro_duro_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#euro_duro_si_fake").fadeIn(0);
+							  $("#euro_duro_no_fake").fadeOut(0);
+							  $('#euro_duro_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( euro_dureza == 0){
+							                        corregir--
+											          };
+                              euro_dureza = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#euro_duro_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#euro_duro_si_fake").fadeOut(0);
+							  $("#euro_duro_no_fake").fadeIn(0);
+							  $('#euro_duro_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(euro_dureza == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  euro_dureza = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#euro_fragil_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#euro_fragil_si_fake").fadeIn(0);
+							  $("#euro_fragil_no_fake").fadeOut(0);
+							  $('#euro_fragil_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(euro_fragilidad == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              euro_fragilidad = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#euro_fragil_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#euro_fragil_si_fake").fadeOut(0);
+							  $("#euro_fragil_no_fake").fadeIn(0);
+							  $('#euro_fragil_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( euro_fragilidad == 1){
+							                        corregir--
+											          };
+							  euro_fragilidad = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});					
+				
+////////////////////					
+					
+$( "#tiza_opaco_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#tiza_opaco_si_fake").fadeIn(0);
+							  $("#tiza_opaco_no_fake").fadeOut(0);
+							  $('#tiza_opaco_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( tiza_opacidad == 0){
+							                        corregir--
+											          };
+                              tiza_opacidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#tiza_opaco_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#tiza_opaco_si_fake").fadeOut(0);
+							  $("#tiza_opaco_no_fake").fadeIn(0);
+							  $('#tiza_opaco_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(tiza_opacidad == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  tiza_opacidad = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#tiza_conductor_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#tiza_conductor_si_fake").fadeIn(0);
+							  $("#tiza_conductor_no_fake").fadeOut(0);
+							  $('#tiza_conductor_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(tiza_conduccion == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              tiza_conduccion = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();		  
+							  
+});
+
+$( "#tiza_conductor_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#tiza_conductor_si_fake").fadeOut(0);
+							  $("#tiza_conductor_no_fake").fadeIn(0);
+							  $('#tiza_conductor_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( tiza_conduccion == 1){
+							                        corregir--
+											          };
+							  tiza_conduccion = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#tiza_duro_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#tiza_duro_si_fake").fadeIn(0);
+							  $("#tiza_duro_no_fake").fadeOut(0);
+							  $('#tiza_duro_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(tiza_dureza == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              tiza_dureza = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#tiza_duro_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#tiza_duro_si_fake").fadeOut(0);
+							  $("#tiza_duro_no_fake").fadeIn(0);
+							  $('#tiza_duro_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( tiza_dureza == 1){
+							                        corregir--
+											          };
+							  tiza_dureza = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+});
+
+$( "#tiza_fragil_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#tiza_fragil_si_fake").fadeIn(0);
+							  $("#tiza_fragil_no_fake").fadeOut(0);
+							  $('#tiza_fragil_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( tiza_fragilidad == 0){
+							                        corregir--
+											          };
+                              tiza_fragilidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#tiza_fragil_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#tiza_fragil_si_fake").fadeOut(0);
+							  $("#tiza_fragil_no_fake").fadeIn(0);
+							  $('#tiza_fragil_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(tiza_fragilidad == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  tiza_fragilidad = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});					
+
+//////////////				
+					
+					
+$( "#hierro_opaco_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#hierro_opaco_si_fake").fadeIn(0);
+							  $("#hierro_opaco_no_fake").fadeOut(0);
+							  $('#hierro_opaco_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( hierro_opacidad == 0){
+							                        corregir--
+											          };
+                              hierro_opacidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#hierro_opaco_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#hierro_opaco_si_fake").fadeOut(0);
+							  $("#hierro_opaco_no_fake").fadeIn(0);
+							  $('#hierro_opaco_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(hierro_opacidad == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  hierro_opacidad = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();							  
+							  
+});
+
+$( "#hierro_conductor_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#hierro_conductor_si_fake").fadeIn(0);
+							  $("#hierro_conductor_no_fake").fadeOut(0);
+							  $('#hierro_conductor_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(hierro_conduccion == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              hierro_conduccion = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#hierro_conductor_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#hierro_conductor_si_fake").fadeOut(0);
+							  $("#hierro_conductor_no_fake").fadeIn(0);
+							  $('#hierro_conductor_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( hierro_conduccion == 1){
+							                        corregir--
+											          };
+							  hierro_conduccion = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#hierro_duro_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#hierro_duro_si_fake").fadeIn(0);
+							  $("#hierro_duro_no_fake").fadeOut(0);
+							  $('#hierro_duro_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(hierro_dureza == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              hierro_dureza = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#hierro_duro_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#hierro_duro_si_fake").fadeOut(0);
+							  $("#hierro_duro_no_fake").fadeIn(0);
+							  $('#hierro_duro_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( hierro_dureza == 1){
+							                        corregir--
+											          };
+							  hierro_dureza = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#hierro_fragil_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#hierro_fragil_si_fake").fadeIn(0);
+							  $("#hierro_fragil_no_fake").fadeOut(0);
+							  $('#hierro_fragil_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(hierro_fragilidad == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              hierro_fragilidad = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#hierro_fragil_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#hierro_fragil_si_fake").fadeOut(0);
+							  $("#hierro_fragil_no_fake").fadeIn(0);
+							  $('#hierro_fragil_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( hierro_fragilidad == 1){
+							                        corregir--
+											          };
+							  hierro_fragilidad = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});						
+		
+////////		
+					
+					
+$( "#metal_opaco_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#metal_opaco_si_fake").fadeIn(0);
+							  $("#metal_opaco_no_fake").fadeOut(0);
+							  $('#metal_opaco_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( metal_opacidad == 0){
+							                        corregir--
+											          };
+                              metal_opacidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#metal_opaco_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#metal_opaco_si_fake").fadeOut(0);
+							  $("#metal_opaco_no_fake").fadeIn(0);
+							  $('#metal_opaco_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(metal_opacidad == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  metal_opacidad = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#metal_conductor_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#metal_conductor_si_fake").fadeIn(0);
+							  $("#metal_conductor_no_fake").fadeOut(0);
+							  $('#metal_conductor_no').addClass('no_pulsado').removeClass('pulsado');
+							  if( metal_conduccion == 0){
+							                        corregir--
+											          };
+                              metal_conduccion = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#metal_conductor_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#metal_conductor_si_fake").fadeOut(0);
+							  $("#metal_conductor_no_fake").fadeIn(0);
+							  $('#metal_conductor_si').addClass('no_pulsado').removeClass('pulsado');
+							  if(metal_conduccion == 1){
+      							                    aciertos--
+													corregir--
+													  };
+							  metal_conduccion = 0;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#metal_duro_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#metal_duro_si_fake").fadeIn(0);
+							  $("#metal_duro_no_fake").fadeOut(0);
+							  $('#metal_duro_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(metal_dureza == 0){      							                   
+													corregir--
+													  };
+                              metal_dureza = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();							  
+							  
+});
+
+$( "#metal_duro_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#metal_duro_si_fake").fadeOut(0);
+							  $("#metal_duro_no_fake").fadeIn(0);
+							  $('#metal_duro_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( metal_dureza == 1){
+							                        aciertos--
+							                        corregir--
+											          };
+							  metal_dureza = 0;
+							  corregir++							  
+                              if( corregir === 16 )corregir_aparece();							  
+							  
+});
+
+$( "#metal_fragil_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#metal_fragil_si_fake").fadeIn(0);
+							  $("#metal_fragil_no_fake").fadeOut(0);
+							  $('#metal_fragil_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(metal_fragilidad == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              metal_fragilidad = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#metal_fragil_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#metal_fragil_si_fake").fadeOut(0);
+							  $("#metal_fragil_no_fake").fadeIn(0);
+							  $('#metal_fragil_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( metal_fragilidad == 1){
+							                        corregir--
+											          };
+							  metal_fragilidad = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();			  
+							  
+});
+
+////////
+
+				
+$( "#plastico_opaco_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#plastico_opaco_si_fake").fadeIn(0);
+							  $("#plastico_opaco_no_fake").fadeOut(0);
+							  $('#plastico_opaco_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(plastico_opacidad == 0){      							                    
+													corregir--
+													  };
+                              plastico_opacidad = 1;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#plastico_opaco_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#plastico_opaco_si_fake").fadeOut(0);
+							  $("#plastico_opaco_no_fake").fadeIn(0);
+							  $('#plastico_opaco_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( plastico_opacidad == 1){
+							                        aciertos--
+							                        corregir--
+											          };
+							  plastico_opacidad = 0;
+							  corregir++							  
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#plastico_conductor_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#plastico_conductor_si_fake").fadeIn(0);
+							  $("#plastico_conductor_no_fake").fadeOut(0);
+							  $('#plastico_conductor_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(plastico_conduccion == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              plastico_conduccion = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#plastico_conductor_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#plastico_conductor_si_fake").fadeOut(0);
+							  $("#plastico_conductor_no_fake").fadeIn(0);
+							  $('#plastico_conductor_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( plastico_conduccion == 1){
+							                        corregir--
+											          };
+							  plastico_conduccion = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#plastico_duro_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#plastico_duro_si_fake").fadeIn(0);
+							  $("#plastico_duro_no_fake").fadeOut(0);
+							  $('#plastico_duro_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(plastico_dureza == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              plastico_dureza = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#plastico_duro_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#plastico_duro_si_fake").fadeOut(0);
+							  $("#plastico_duro_no_fake").fadeIn(0);
+							  $('#plastico_duro_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( plastico_dureza == 1){
+							                        corregir--
+											          };
+							  plastico_dureza = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#plastico_fragil_si" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#plastico_fragil_si_fake").fadeIn(0);
+							  $("#plastico_fragil_no_fake").fadeOut(0);
+							  $('#plastico_fragil_no').addClass('no_pulsado').removeClass('pulsado');
+							  if(plastico_fragilidad == 0){
+      							                    aciertos--
+													corregir--
+													  };
+                              plastico_fragilidad = 1;
+							  corregir++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});
+
+$( "#plastico_fragil_no" ).on('click', function(){
+                              $(this).addClass('pulsado').removeClass('no_pulsado');
+							  $("#plastico_fragil_si_fake").fadeOut(0);
+							  $("#plastico_fragil_no_fake").fadeIn(0);
+							  $('#plastico_fragil_si').addClass('no_pulsado').removeClass('pulsado');
+							  if( plastico_fragilidad == 1){
+							                        corregir--
+											          };
+							  plastico_fragilidad = 0;
+							  corregir++
+							  aciertos++
+                              if( corregir === 16 )corregir_aparece();
+							  
+});	
+
+
+
+
+};
+
+
+                           
+                           
+							
+function corregir_aparece(){  
+							                    $('#corregir').css('opacity', '1.0');
+												$('#corregir').css('cursor', 'pointer');
+												$('#corregir').off('click');
+												$('#corregir').on('click', function(){
+												
+												                $(this).off('click')
+																       .css({opacity: '0.2', cursor: 'default' });												   
+															    
+												
+                                                                corregir_respuestas();
+																
+																$('#tabla_again').css('opacity', '1.0');
+																$('#inicio_again').css('opacity', '1.0');
+																
+															    $('#tabla_again').on('click', function(){
+                                                                                                     escena_5();
+ 									                            });
+																
+																$('#inicio_again').on('click', function(){
+                                                                                                     escena_0();																									                          																									 
+ 									                            });
+																
+																$('#tabla_again, #inicio_again').css('cursor', 'pointer');
+															
+																
+												
+ 									            });						
+																							
+							}
+
+
+function efecto_linterna_1(){
+
+   $('#efecto_linterna_1').css('left', '11%');   
+   $('#efecto_linterna_1').animate({ left: '40%'}, 4500, 'linear', function(){
+                                                                                      if(estamos_escena_1 === 1)efecto_linterna_1();
+																					  if(estamos_escena_1 === 0){ $('#efecto_linterna_1').css('left', '11%').fadeOut(0); }																			              
+																			 });
+
+};
+
+function efecto_linterna_2(){
+   
+   $('#efecto_linterna_2').css('left', '11%').fadeOut(0);
+   
+   
+   
+           $('#efecto_linterna_2').fadeIn(0);
+           $('#efecto_linterna_2').animate({ left: '40%'}, 4500, 'linear', function(){
+                                                                                      if(estamos_escena_1 === 1)efecto_linterna_2();
+																					  if(estamos_escena_1 === 0){ $('#efecto_linterna_2').css('left', '11%').fadeOut(0); }
+																			           });
+    
+};
+
+function efecto_linterna_3(){
+
+    $('#efecto_linterna_3').css('left', '11%').fadeOut(0);
+	
+	
+          
+		  $('#efecto_linterna_3').fadeIn(0);   
+          $('#efecto_linterna_3').animate({ left: '40%'}, 4500, 'linear', function(){
+																			          if(estamos_escena_1 === 1)efecto_linterna_3();
+																					  if(estamos_escena_1 === 0){ $('#efecto_linterna_3').css('left', '11%').fadeOut(0); }
+																			            });
+   
+};
+
+
+
+
+
+//hacemos todos los objetos draggables
+
+$('.objeto_draggable').draggable({      containment: "window",
+                                        delay: 100,
+                                        revert: true,
+                                        revertDuration: 10,
+										start: function( event, ui ){										                             														
+                              										
+																	},
+                                        stop: function( event, ui ) {                                                
+														                                                                         																  
+                                                                    },
+
+										drag: function( event, ui ) {                    						             																	 
+																	 elem_dragged = $(this);													 															 
+                                                                   																	 
+     																}							
+										});
+										
+										
+$('#poner_linterna').droppable({                activate: function( event, ui ) {                                                                       
+																		
+                                      									},
+																		
+										        deactivate: function( event, ui ) {
+										                                
+										        },
+										
+                                                drop: function() {										
+
+                                                                if( elem_dragged.attr('id')=== 'vaso' ){
+										                            
+																	vaso_lintera();
+																	
+																	veces_vaso++;
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_vaso();
+																}
+
+																if( elem_dragged.attr('id')=== 'tupper' ){
+										
+										                            tupper_lintera();
+																	
+																	veces_tupper++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_tupper();
+																}
+																
+																if( elem_dragged.attr('id')=== 'plato' ){
+										
+										                            plato_lintera();
+																	
+																	veces_plato++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_plato();
+																}
+																
+																if( elem_dragged.attr('id')=== 'tabla' ){
+										
+										                            tabla_lintera();
+																	
+																	veces_tabla++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_tabla();
+																}
+
+																$('#poner_linterna').fadeOut(600);
+ 																
+														   },
+                                                accept: '.objeto_draggable', 
+                                                tolerance: 'touch',                              
+
+                });
+				
+$('#poner_punzon').droppable({                activate: function( event, ui ) {                                                                       
+																		
+                                      									},
+																		
+										        deactivate: function( event, ui ) {
+										                                
+										        },
+										
+                                                drop: function() {										
+
+                                                                if( elem_dragged.attr('id')=== 'vaso' ){
+										
+										                            vaso_punzon();
+																	
+																	veces_vaso++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_vaso();
+																}
+
+																if( elem_dragged.attr('id')=== 'tupper' ){
+										
+										                            tupper_punzon();
+																	
+																	veces_tupper++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_tupper();
+																}
+																
+																if( elem_dragged.attr('id')=== 'plato' ){
+										
+										                            plato_punzon();
+																	
+																	veces_plato++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_plato();
+																}
+																
+																if( elem_dragged.attr('id')=== 'tabla' ){
+										
+										                            tabla_punzon();
+																	
+																	veces_tabla++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_tabla();
+																}
+																
+																$('#poner_punzon').fadeOut(600);
+ 																
+														   },
+                                                accept: '.objeto_draggable', 
+                                                tolerance: 'touch',                              
+
+                });
+				
+$('#poner_circuito').droppable({                activate: function( event, ui ) {                                                                       
+																		
+                                      									},
+																		
+										        deactivate: function( event, ui ) {
+										                                
+										        },
+										
+                                                drop: function() {										
+
+                                                                if( elem_dragged.attr('id')=== 'vaso' ){
+										
+										                            vaso_circuito();
+																	
+																	veces_vaso++;
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_vaso();
+																}
+
+																if( elem_dragged.attr('id')=== 'tupper' ){
+										
+										                            tupper_circuito();
+																	
+																	veces_tupper++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_tupper();
+																}
+																
+																if( elem_dragged.attr('id')=== 'plato' ){
+										
+										                            plato_circuito();
+																	
+																	veces_plato++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_plato();
+																}
+																
+																if( elem_dragged.attr('id')=== 'tabla' ){
+										
+										                            tabla_circuito();
+																	
+																	veces_tabla++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_tabla();
+																}															
+
+																$('#poner_circuito').fadeOut(600);
+ 																
+														   },
+                                                accept: '.objeto_draggable', 
+                                                tolerance: 'touch',                              
+
+                });
+				
+$('#poner_martillo').droppable({                activate: function( event, ui ) {                                                                       
+																		
+                                      									},
+																		
+										        deactivate: function( event, ui ) {
+										                                
+										        },
+										
+                                                drop: function() {	
+
+												
+
+                                                                if( elem_dragged.attr('id')=== 'vaso' ){
+										
+										                            vaso_martillo();
+																	
+																	veces_vaso++;
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_vaso();																	
+																										                               
+																}
+
+																if( elem_dragged.attr('id')=== 'tupper' ){
+										
+										                            tupper_martillo();
+																	
+																	veces_tupper++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_tupper();
+																}
+																
+																
+																if( elem_dragged.attr('id')=== 'plato' ){
+										
+										                            plato_martillo();
+																	
+																	veces_plato++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_plato();
+																}
+																
+																if( elem_dragged.attr('id')=== 'tabla' ){
+										
+										                            tabla_martillo();
+																	
+																	veces_tabla++
+																	
+																	$(this).droppable('disable');
+																	
+																	cambiar_tercio_tabla();
+																	
+																	
+																}
+																
+																$('#poner_martillo').fadeOut(600);
+ 																
+														   },
+                                                accept: '.objeto_draggable', 
+                                                tolerance: 'touch',                              
+
+                });
+				
+				
+function vaso_lintera(){          
+		                $('#sitio_linterna_vaso').fadeIn(0); 
+                        setTimeout(function(){
+						                      $('#texto_linterna').fadeIn(300);
+						}, 1500);
+};
+
+function vaso_punzon(){
+                        $('#sitio_punzon_vaso').fadeIn(0);
+					    $("#punzon").css('z-index', '600');
+						
+						$("#punzon").rotate({
+                                                                         duration: 1500,
+                                                                         angle: 30, 
+                                                                         animateTo: 42,  //-22, 12 y 32
+							                                             center: ["50%", "80%"],
+							                                             easing: $.easing.easeInQuad
+                                                      });
+													  
+						$("#punzon").animate({ top: '10%', left: '58%'}, 1000, function(){ vaso_punzon_sonido.play(); });
+						$("#punzon").animate({ top: '17%'}, 1000);
+						$("#punzon").animate({ top: '10%'}, 500, function(){ vaso_punzon_sonido.play(); });
+						$("#punzon").animate({ top: '17%'}, 1000);						
+						$("#punzon").animate({ top: '10%'}, 500, function(){ $('#texto_punzon').fadeIn(300); });
+						$("#punzon").animate({ top: '18%', left: '71%'}, 1000, function(){
+						                                                                  $("#punzon").rotate({
+                                                                                          duration: 1000,                                                                                           
+                                                                                          animateTo: 30,  //-22, 12 y 32
+							                                                              center: ["50%", "80%"],
+							                                                              easing: $.easing.easeInQuad
+                                                      });
+						
+						                                                                  });
+						
+};
+
+function vaso_circuito(){
+                        $('#sitio_circuito_vaso').fadeIn(0);
+						$('#cable_izq').animate({ width: '9%'}, 1000);
+						$('#cable_der').animate({ left: '28%', width: '5.5%'}, 1000);
+						
+						setTimeout(function(){
+						                      $('#texto_circuito').fadeIn(300);
+						}, 1500);
+						
+
+};
+
+function vaso_martillo(){
+                        $('#sitio_martillo_vaso').fadeIn(0);
+						$("#martillo").css('z-index', '600');
+                        $("#martillo").animate({ top: '57%', left: '65%'}, 1000, function(){
+						
+						                              $("#martillo").rotate({
+                                                                         duration: 200,
+                                                                         angle: 0, 
+                                                                         animateTo: -45,  //-22, 12 y 32
+							                                             center: ["50%", "80%"],
+							                                             easing: $.easing.easeInQuad
+                                                      });
+						
+						
+						
+						});
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 600,                                                              
+                                                             animateTo: 0,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });
+						
+						               $("#martillo").delay(700).animate({ top: '60%', left: '69%'}, 1000);
+									   
+									   $('#texto_martillo').delay(1500).fadeIn(300);
+						
+						}, 1500);
+						
+						setTimeout(function(){
+						
+						              if (ua.indexOf('safari') !== -1) { 
+                                      if (ua.indexOf('chrome') > -1) {
+                                                                      vaso_roto.play();
+                                      } else {
+                                       
+                                      }
+                                      }
+									  
+									  
+									  if (ua.indexOf('safari') == -1){
+									                                  vaso_roto.play();
+									  }
+									  
+									  
+						               
+						
+						               $('.trozo').fadeIn(0);
+									   $('#sitio_martillo_vaso').fadeOut(0);
+									   
+									   $('#trozo_1').animate({left: '50%', top: '80%' }, 700);
+									   $('#trozo_2').animate({left: '49%', top: '77%' }, 600);
+									   $('#trozo_3').animate({left: '51%', top: '71%' }, 500);
+									   $('#trozo_4').animate({left: '48%', top: '82%' }, 700);
+									   $('#trozo_5').animate({left: '52%', top: '81%' }, 500);
+									   $('#trozo_6').animate({left: '60%', top: '80%' }, 600);
+									   $('#trozo_7').animate({left: '64%', top: '77%' }, 700);
+									   $('#trozo_8').animate({left: '58%', top: '74%' }, 600);
+									   $('#trozo_9').animate({left: '62%', top: '71%' }, 500);
+									   $('#trozo_10').animate({left: '67%', top: '84%' }, 700);
+									   $('#trozo_11').animate({left: '60%', top: '80%' }, 600);
+									   $('#trozo_12').animate({left: '62%', top: '72%' }, 500);
+									   						
+						}, 1200);
+						
+						if (ua.indexOf('safari') !== -1) { 
+                        if (ua.indexOf('chrome') > -1) {
+                                                                      
+                        } else {
+                                          setTimeout(function(){
+										                vaso_roto.play();
+										  }, 700); 						 
+                        }
+                        }
+						
+						
+};
+
+
+
+
+
+function tupper_lintera(){ 
+						
+						
+						girar_tupper();
+						
+};
+
+function tupper_punzon(){
+                        $('#sitio_punzon_tupper').fadeIn(0);
+						$('#sitio_punzon_tupper_fake').delay(2000).fadeIn(4000);
+						$("#punzon").css('z-index', '600');
+						$("#punzon").animate({ top: '11%', left: '57.5%'}, 1000, function(){ tupper_sonido.play(); });
+						$("#punzon").animate({ top: '17%'}, 1000);
+						$("#punzon").animate({ top: '11%'}, 500, function(){ tupper_sonido.play(); });
+						$("#punzon").animate({ top: '17%'}, 1000);
+						$("#punzon").animate({ top: '11%'}, 500, function(){ tupper_sonido.play(); });
+						$("#punzon").animate({ top: '17%'}, 1000);
+						$("#punzon").animate({ top: '11%'}, 500, function(){ $('#texto_punzon').fadeIn(300); });
+						$("#punzon").animate({ top: '18%', left: '71%'}, 1000);
+ 
+};
+
+function tupper_circuito(){
+                        $('#sitio_circuito_tupper').fadeIn(0);
+						
+						$('#cable_izq').animate({ width: '9%'}, 1000);
+						$('#cable_der').animate({ left: '28%', width: '5.5%'}, 1000);
+						
+						setTimeout(function(){
+						                      $('#texto_circuito').fadeIn(300);
+						}, 1500);
+
+};
+
+function tupper_martillo(){
+                        $('#sitio_martillo_tupper').fadeIn(0);
+						$("#martillo").css('z-index', '600');
+						$("#martillo").animate({ top: '57%', left: '65%'}, 1000, function(){
+						
+						                              $("#martillo").rotate({
+                                                                         duration: 200,
+                                                                         angle: 0, 
+                                                                         animateTo: -45,  //-22, 12 y 32
+							                                             center: ["50%", "80%"],
+							                                             easing: $.easing.easeInQuad
+                                                      });
+						
+					                                  martillo_plastico.play();
+						
+						});
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 600,                                                              
+                                                             animateTo: 0,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });		
+						               
+						                
+						
+						}, 1500);
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 200,                                                              
+                                                             animateTo: -45,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });
+
+                                                      martillo_plastico.play();													  
+						               
+						
+						}, 2200);
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 600,                                                              
+                                                             animateTo: 0,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });
+
+                                        
+										          
+												  
+																							  
+						               
+						                $("#martillo").delay(900).animate({ top: '60%', left: '69%'}, 1000);
+										
+										$('#texto_martillo').fadeIn(300);
+						}, 2700);
+
+};
+
+////////////////// pongo esto aquí////////////////////
+
+function girar_tupper(){
+
+                        if( estamos_en_tupper === 1){						
+
+                        $('#sitio_linterna_tupper').fadeIn(200);
+
+                        $('#texto_linterna').fadeIn(200);
+
+						setTimeout(function(){
+						
+						      $("#sitio_linterna_tupper").rotate({
+                                                             duration: 500,
+															 angle: 0,
+                                                             animateTo: -90,  //-22, 12 y 32
+							                                 center: ["50%", "50%"],
+							                                 easing: $.easing.easeInQuad
+                                                        });
+														
+							  $('#bloqueo_tupper').fadeIn(1000);
+													  
+						      setTimeout(function(){
+						                        $('#texto_linterna').hide(300).show(300).html(textos.texto_linterna_tupper_opaco);
+						      }, 500);
+						
+						}, 3000);
+						
+						setTimeout(function(){
+						
+						      $("#sitio_linterna_tupper").rotate({
+                                                             duration: 500,
+															 angle: -90,
+                                                             animateTo: 0,  //-22, 12 y 32
+							                                 center: ["50%", "50%"],
+							                                 easing: $.easing.easeInQuad
+                                                        });
+														
+							  $('#bloqueo_tupper').fadeOut(500);
+													  
+						      setTimeout(function(){
+						                        $('#texto_linterna').hide(300).show(300).html(textos.texto_linterna_tupper_tranparente);
+						      }, 500);
+						
+						}, 6000);
+						
+						setTimeout(function(){
+						                        girar_tupper();
+						},6000);
+						
+						
+					    }	
+													  
+										
+						
+};
+
+//////////////////////////////////////////////////////
+
+
+function plato_lintera(){
+                        $('#sitio_linterna_plato').fadeIn(0);
+						
+						$("#sitio_linterna_plato").rotate({
+                                                             duration: 150,
+															 angle: 0,
+                                                             animateTo: -90,  //-22, 12 y 32
+							                                 center: ["50%", "50%"],
+							                                 easing: $.easing.easeInQuad
+                                                        });
+														
+						$('#bloqueo_plato').fadeIn(150);
+														
+                        setTimeout(function(){
+						                      $('#texto_linterna').fadeIn(300);
+						}, 1500); 
+};
+
+function plato_punzon(){
+                        $('#sitio_punzon_plato').fadeIn(0);
+						$('#sitio_punzon_plato_fake').delay(2000).fadeIn(4000);
+						$("#punzon").css('z-index', '600');
+						$("#punzon").animate({ top: '10%', left: '57.5%'}, 1000, function(){  plato_sonido.play() });
+						$("#punzon").animate({ top: '15%'}, 1000);
+						$("#punzon").animate({ top: '10%'}, 1400, function(){  plato_sonido.play() });
+						$("#punzon").animate({ top: '15%'}, 2000, function(){  plato_sonido.play() });
+						$("#punzon").animate({ top: '10%'}, 1400);
+						$("#punzon").animate({ top: '15%'}, 1400);
+						$("#punzon").animate({ top: '10%'}, 500, function(){ $('#texto_punzon').fadeIn(300); });
+						$("#punzon").animate({ top: '18%', left: '71%'}, 1000);
+
+};
+
+function plato_circuito(){
+                        $('#sitio_circuito_plato').fadeIn(0);
+                        
+						
+						setTimeout(function(){
+						                      circuito_sonido.play();
+											  $('#circuito').css('background-image', 'url(data/imgns/circuito_on.png)');
+						}, 1000);
+						
+						
+						
+						$('#cable_izq').animate({ width: '9%'}, 1000);
+						$('#cable_der').animate({ left: '28%', width: '5.5%'}, 1000);
+						
+						setTimeout(function(){
+						                      $('#texto_circuito').fadeIn(300);
+						}, 1500);
+};
+
+function plato_martillo(){
+                        $('#sitio_martillo_plato').fadeIn(0);
+						$("#martillo").css('z-index', '600');
+						$("#martillo").animate({ top: '54%', left: '65%'}, 1000, function(){
+						
+						                              /*$("#martillo").rotate({
+                                                                         duration: 1000,
+                                                                         angle: 0, 
+                                                                         animateTo: -25,  //-22, 12 y 32
+							                                             center: ["50%", "80%"],
+							                                             easing: $.easing.easeInQuad
+                                                      });*/
+													  
+													  
+						
+						
+						
+						});
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 200,                                                              
+                                                             animateTo: -65,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });
+
+                                                      martillo_metal.play();													  
+						               
+						
+						}, 2500);
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 400,                                                              
+                                                             animateTo: 0,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });						
+						               
+						
+						}, 2800);
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 200,                                                              
+                                                             animateTo: -65,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });
+
+                                        martillo_metal.play();													  
+						               
+						
+						}, 3300);
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 400,                                                              
+                                                             animateTo: 0,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });		
+						               
+						                $("#martillo").delay(700).animate({ top: '60%', left: '69%'}, 1000);
+										
+										$('#texto_martillo').fadeIn(300);
+						}, 3700);
+
+};
+
+
+function tabla_lintera(){
+                        $('#sitio_linterna_tabla').fadeIn(0);
+                        setTimeout(function(){
+						                      $('#texto_linterna').fadeIn(300);
+						}, 1500); 
+						
+						$("#sitio_linterna_tabla").rotate({
+                                                             duration: 250,
+															 angle: 0,
+                                                             animateTo: -70,  //-22, 12 y 32
+							                                 center: ["50%", "50%"],
+							                                 easing: $.easing.easeInQuad
+                                                        });
+														
+						$('#bloqueo_tabla').fadeIn(150);
+};
+
+function tabla_punzon(){
+                        $('#sitio_punzon_tabla').fadeIn(0);
+						$('#sitio_punzon_tabla_fake').delay(2000).fadeIn(4000);
+						$("#punzon").css('z-index', '600');
+						$("#punzon").animate({ top: '8%', left: '57.5%'}, 1000, function(){  tabla_sonido.play(); });
+						$("#punzon").animate({ top: '14%'}, 1000);
+						$("#punzon").animate({ top: '8%'}, 500, function(){  tabla_sonido.play(); });
+						$("#punzon").animate({ top: '14%'}, 1000);
+						$("#punzon").animate({ top: '8%'}, 500, function(){  tabla_sonido.play(); });
+						$("#punzon").animate({ top: '14%'}, 1000);
+						$("#punzon").animate({ top: '8%'}, 500, function(){ $('#texto_punzon').fadeIn(300); });
+						$("#punzon").animate({ top: '18%', left: '71%'}, 1000);
+
+};
+
+function tabla_circuito(){
+                        $('#sitio_circuito_tabla').fadeIn(0);
+						
+						$('#cable_izq').animate({ width: '9%'}, 1000);
+						$('#cable_der').animate({ left: '28%', width: '5.5%'}, 1000);
+						
+						setTimeout(function(){
+						                      $('#texto_circuito').fadeIn(300);
+						}, 1500);
+						
+
+};
+
+function tabla_martillo(){
+                        $('#sitio_martillo_tabla').fadeIn(0);
+                        $("#martillo").css('z-index', '600');
+						$("#martillo").animate({ top: '54%', left: '65%'}, 1000, function(){
+						
+						                              /*$("#martillo").rotate({
+                                                                         duration: 1000,
+                                                                         angle: 0, 
+                                                                         animateTo: -25,  //-22, 12 y 32
+							                                             center: ["50%", "80%"],
+							                                             easing: $.easing.easeInQuad
+                                                      });*/
+						
+						
+						
+						});
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 200,                                                              
+                                                             animateTo: -65,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });
+ 
+                                        martillo_madera.play();	 
+						               
+						
+						}, 2500);
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 400,                                                              
+                                                             animateTo: 0,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });						
+						               
+						
+						}, 2800);
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 200,                                                              
+                                                             animateTo: -65,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });
+													  
+										martillo_madera.play();
+													  
+						               
+						
+						}, 3300);
+						
+						setTimeout(function(){
+						
+						               $("#martillo").rotate({
+                                                             duration: 400,                                                              
+                                                             animateTo: 0,  //-22, 12 y 32
+							                                 center: ["50%", "80%"],
+							                                 easing: $.easing.easeInQuad
+                                                      });		
+						               
+						                $("#martillo").delay(700).animate({ top: '60%', left: '69%'}, 1000);
+										
+										
+						                      $('#texto_martillo').fadeIn(300);
+						
+						}, 3700);
+};
+
+function utilizar_vaso(){            
+			
+			$('.objeto_draggable').draggable('disable').css({opacity: '0.2', cursor: 'default'});
+			$('#vaso').draggable('enable').css({opacity: '1.0', cursor: 'pointer'});
+			$('.poner').droppable('enable');
+			$('.sitio_objeto').fadeOut(1000);
+            $('.texto_objeto').fadeOut(1000);
+			
+			$('#texto_linterna').html(textos.texto_linterna_vaso);
+			$('#texto_punzon').html(textos.texto_punzon_vaso);
+			$('#texto_circuito').html(textos.texto_circuito_vaso);
+			$('#texto_martillo').html(textos.texto_martillo_vaso);
+			
+			$('#fondo_vaso, #fondo_tupper, #fondo_plato, #fondo_tabla').removeClass('fondo_objetos_1 fondo_objetos_2');
+			$('#fondo_vaso').addClass('fondo_objetos_2');
+            $('#fondo_tupper, #fondo_plato, #fondo_tabla').addClass('fondo_objetos_1');
+			
+			$('#cable_izq').css({ width: '2%'}, 1000);
+			$('#cable_der').css({ left: '32.9%', width: '0.6%'}, 1000);
+			
+			
+			$('#fondo_fake').animate({opacity: '0.3'}, 1000);
+			$('#robot').delay(1500).fadeIn(1000).delay(3500).fadeOut(1000);
+			$('#bocadillo_0').delay(1500).fadeIn(1000).delay(3500).fadeOut(1000);
+			$('#fondo_fake').delay(5500).animate({opacity: '1.0'}, 1000);
+			
+
+};
+
+function utilizar_tupper(){
+
+        estamos_en_tupper = 1;
+		
+		$("#sitio_linterna_tupper").rotate({
+                                            angle: 0
+        });
+
+        setTimeout(function(){
+		
+		    $("#punzon").rotate({
+                                                                         
+                                 angle: 30, 
+                                                                         
+                                });
+		
+		    $('.objeto_draggable').draggable('disable').css({opacity: '0.2', cursor: 'default'});
+			$('#tupper').draggable('enable').css({opacity: '1.0', cursor: 'pointer'});
+			$('.poner').droppable('enable');
+			$('.sitio_objeto').fadeOut(1000);
+			$('.poner').fadeIn(600);
+			$('.texto_objeto').fadeOut(1000);
+			
+			$('.trozo').fadeOut(500);
+			
+			//$('#texto_utilizar_ahora').html(textos.prueba_tupper);
+			
+			//$('#texto_utilizar_ahora').fadeIn(500).delay(3000).fadeOut(500);
+			
+			$('#fondo_fake').animate({opacity: '0.3'}, 100);
+			$('#robot').delay(100).fadeIn(300).delay(3000).fadeOut(500);
+			$('#bocadillo_0').html(textos.prueba_tupper);
+			$('#bocadillo_0 p').css('margin-top', '14%');
+			$('#bocadillo_0').delay(100).fadeIn(300).delay(3000).fadeOut(500);
+			$('#fondo_fake').delay(3400).animate({opacity: '1.0'}, 100);
+			
+			$('#fondo_vaso, #fondo_tupper, #fondo_plato, #fondo_tabla').removeClass('fondo_objetos_1 fondo_objetos_2');
+			$('#fondo_tupper').addClass('fondo_objetos_2');
+            $('#fondo_vaso, #fondo_plato, #fondo_tabla').addClass('fondo_objetos_1');
+			
+			$('#cable_izq').css({ width: '2%'}, 1000);
+			$('#cable_der').css({ left: '32.9%', width: '0.6%'}, 1000);
+			
+			setTimeout(function(){
+			
+			//este lo pongo en lka funcion de girar tupper $('#texto_linterna').html(textos.texto_linterna_tupper);
+			$('#texto_punzon').html(textos.texto_punzon_tupper);
+			$('#texto_circuito').html(textos.texto_circuito_tupper);
+			$('#texto_martillo').html(textos.texto_martillo_tupper);
+			}, 800);
+			
+		
+		}, 6000);
+            
+			
+
+};
+
+function utilizar_plato(){
+
+        estamos_en_tupper = 0;
+		
+		$("#sitio_linterna_plato").rotate({
+                                            angle: 0
+        });
+            
+		setTimeout(function(){	
+			
+			$('.objeto_draggable').draggable('disable').css({opacity: '0.2', cursor: 'default'});
+			$('#plato').draggable('enable').css({opacity: '1.0', cursor: 'pointer'});
+			$('.poner').droppable('enable');
+			$('.sitio_objeto').fadeOut(1000);
+			$('.poner').fadeIn(600);
+			
+			$('.texto_objeto').fadeOut(1000);
+			$('#bloqueo_tupper').fadeOut(100);
+			//$('#texto_utilizar_ahora').html(textos.prueba_plato);
+			
+			//$('#texto_utilizar_ahora').fadeIn(500).delay(3000).fadeOut(500);
+			
+			$('#fondo_fake').animate({opacity: '0.3'}, 100);
+			$('#robot').delay(100).fadeIn(300).delay(3000).fadeOut(500);			
+			$('#bocadillo_0').html(textos.prueba_plato);
+			$('#bocadillo_0 p').css('margin-top', '14%');
+			$('#bocadillo_0').delay(100).fadeIn(300).delay(3000).fadeOut(500);
+			$('#fondo_fake').delay(3400).animate({opacity: '1.0'}, 100);
+			
+			$('#fondo_vaso, #fondo_tupper, #fondo_plato, #fondo_tabla').removeClass('fondo_objetos_1 fondo_objetos_2');
+			$('#fondo_plato').addClass('fondo_objetos_2');
+            $('#fondo_vaso, #fondo_tupper, #fondo_tabla').addClass('fondo_objetos_1');
+			
+			$('#cable_izq').css({ width: '2%'}, 1000);
+			$('#cable_der').css({ left: '32.9%', width: '0.6%'}, 1000);
+			
+			setTimeout(function(){
+			
+			$('#texto_linterna').html(textos.texto_linterna_plato);
+			$('#texto_punzon').html(textos.texto_punzon_plato);
+			$('#texto_circuito').html(textos.texto_circuito_plato);
+			$('#texto_martillo').html(textos.texto_martillo_plato);
+			
+			}, 800);
+			
+	    }, 7500);
+
+};
+
+function utilizar_tabla(){        
+
+        setTimeout(function(){
+            
+			$('.objeto_draggable').draggable('disable').css({opacity: '0.2', cursor: 'default'});
+			$('#tabla').draggable('enable').css({opacity: '1.0', cursor: 'pointer'});
+			$('.poner').droppable('enable');
+			$('.sitio_objeto').fadeOut(1000);
+			$('.poner').fadeIn(600);
+			$('.texto_objeto').fadeOut(1000);
+			$('#bloqueo_plato').fadeOut(500);
+			$('#circuito').css('background-image', 'url(data/imgns/circuito.png)');
+			
+			//$('#texto_utilizar_ahora').html(textos.prueba_tabla);
+			
+			//$('#texto_utilizar_ahora').fadeIn(500).delay(4000).fadeOut(500);
+			
+			$('#fondo_fake').animate({opacity: '0.3'}, 100);
+			$('#robot').delay(100).fadeIn(300).delay(3000).fadeOut(500);
+			$('#bocadillo_0').html(textos.prueba_tabla);
+			$('#bocadillo_0 p').css('margin-top', '14%');
+			$('#bocadillo_0').delay(100).fadeIn(300).delay(3000).fadeOut(500);
+			$('#fondo_fake').delay(3400).animate({opacity: '1.0'}, 100);
+			
+			$('#fondo_vaso, #fondo_tupper, #fondo_plato, #fondo_tabla').removeClass('fondo_objetos_1 fondo_objetos_2');
+			$('#fondo_tabla').addClass('fondo_objetos_2');
+            $('#fondo_vaso, #fondo_plato, #fondo_tupper').addClass('fondo_objetos_1');
+			
+			$('#cable_izq').css({ width: '2%'}, 1000);
+			$('#cable_der').css({ left: '32.9%', width: '0.6%'}, 1000);
+			
+			setTimeout(function(){
+			
+			$('#texto_linterna').html(textos.texto_linterna_tabla);
+			$('#texto_punzon').html(textos.texto_punzon_tabla);
+			$('#texto_circuito').html(textos.texto_circuito_tabla);
+			$('#texto_martillo').html(textos.texto_martillo_tabla);
+            }, 800);
+			
+			}, 7000);
+};
+
+
+
+
+function cambiar_tercio_vaso(){
+
+         if(veces_vaso === 4){
+		                   utilizar_tupper()						  
+		 };
+};
+
+function cambiar_tercio_tupper(){
+
+         if(veces_tupper === 4){
+		                   utilizar_plato()						  
+		 };
+
+};
+
+function cambiar_tercio_plato(){
+
+         if(veces_plato === 4){
+		                   utilizar_tabla()
+		 };
+};
+
+function cambiar_tercio_tabla(){
+
+         if(veces_tabla === 4){
+		 
+		                setTimeout(function(){
+						
+						             escena_5();
+                                     $('#vaso').draggable('enable');
+									 $('.poner').droppable('enable');									 
+									 
+						}, 9500)						 
+		                
+		 };
+};
+
+
+			
+				
+function corregir_respuestas(){
+
+
+
+
+if( matraz_opacidad !== 0 ){   $('#matraz_opaco_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+							  
+if( matraz_conduccion !== 0 ){  $('#matraz_conductor_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+	
+  
+if( matraz_dureza !== 1 ){  $('#matraz_duro_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		       
+if( matraz_fragilidad !== 1 ){  $('#matraz_fragil_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+
+if( jarron_opacidad !== 1 ){  $('#jarron_opaco_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+	
+	   
+if( jarron_conduccion !== 0){  $('#jarron_conductor_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		    
+if( jarron_dureza !== 1){  $('#jarron_duro_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		      
+if( jarron_fragilidad !== 1){  $('#jarron_fragil_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+	
+	    
+
+if( regla_opacidad !== 0){  $('#regla_opaco_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+if( regla_conduccion !== 0){  $('#regla_conductor_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		    
+if( regla_dureza !== 0){  $('#regla_duro_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+if( regla_fragilidad !== 1){  $('#regla_fragil_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		   
+
+if( euro_opacidad !== 1){  $('#euro_opaco_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		    
+if( euro_conduccion !== 1){  $('#euro_conductor_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		    
+if( euro_dureza !== 1){  $('#euro_duro_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+	
+	    
+if( euro_fragilidad !== 0){  $('#euro_fragil_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		    
+					
+if( tiza_opacidad !== 1){  $('#tiza_opaco_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		   
+if( tiza_conduccion !== 0){  $('#tiza_conductor_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+	
+	   
+if( tiza_dureza !== 0){  $('#tiza_duro_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+if( tiza_fragilidad !== 1){  $('#tiza_fragil_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		    
+					
+if( hierro_opacidad !== 1){  $('#hierro_opaco_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+if( hierro_conduccion !== 0){  $('#hierro_conductor_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+if( hierro_dureza !== 0){  $('#hierro_duro_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+	
+	     
+if( hierro_fragilidad !== 0){  $('#hierro_fragil_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+						
+if( metal_opacidad !== 1){  $('#metal_opaco_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+	
+	     
+if( metal_conduccion !== 1){  $('#metal_conductor_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+if( metal_dureza !== 1){  $('#metal_duro_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+if( metal_fragilidad !== 0){  $('#metal_fragil_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+	
+	     
+
+if( plastico_opacidad !== 1){  $('#plastico_opaco_no').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+if( plastico_conduccion !== 0){  $('#plastico_conductor_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		    
+if( plastico_dureza !== 0){  $('#plastico_duro_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+
+		     
+if( plastico_fragilidad !== 0){  $('#plastico_fragil_si').removeClass('pulsado').addClass('fallo_eleccion')   }
+	
+
+
+if( aciertos === 16){
+												
+					bien.play();
+					
+					$('.cuadricula').animate({ opacity: '0.4'}, 1000);
+					
+					$('#bocadillo_final').fadeOut(0);
+					
+					$('#bocadillo_final').html(textos.enhorabuena);
+					
+					$('#robot_final').animate({top: '40%',
+		                                      left: '37%',
+		                                      height: '57%',
+                                              width: '23%',
+											  }, 1000);
+					
+       
+                    $('#bocadillo_final').css({
+					                          top: '14%',
+		                                      left: '22%',
+		                                      height: '25%',
+                                              width: '26%'
+											  })
+											  .delay(1500)
+											  .fadeIn(1500);
+
+                    setTimeout(function(){
+					
+					
+					$('.cuadricula').animate({ opacity: '1.0'}, 1000);
+					
+					$('#bocadillo_final').fadeOut(0);
+					
+					if( estamos_escena_0 === 0 ){
+					$('#bocadillo_final').html(textos.robot_pulsa);
+					}else{
+					$('#bocadillo_final').html('');
+					}
+					
+					$('#robot_final').animate({top: '35%',
+		                                      left: '81%',
+		                                      height: '53%',
+                                              width: '19%',
+											  }, 1000);
+					
+       
+                    $('#bocadillo_final').css({
+					                          top: '11%',
+		                                      left: '66%',
+		                                      height: '25%',
+                                              width: '26%'
+											  })
+											  .delay(3000)
+											  .fadeIn(1500);
+					
+					
+					
+					}, 7000);
+												
+					}
+					else{
+												
+					mal.play();					
+									
+					}	    
+	
+
+
+
+};
+
+			
+
+});
+ 
+ </script>
+
 </body>
 </html>
